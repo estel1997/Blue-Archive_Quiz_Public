@@ -1,0 +1,13 @@
+{
+  "name": "blue-archive-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fan-made Blue Archive quiz web app with Supabase and Cloudflare Pages integration.",
+  "scripts": {
+    "check": "node -c script.js && node -c scripts/build-cloudflare-pages.js && node -c scripts/build-single-html.js",
+    "build": "node scripts/build-single-html.js && node scripts/build-cloudflare-pages.js",
+    "build:single": "node scripts/build-single-html.js",
+    "build:pages": "node scripts/build-cloudflare-pages.js",
+    "deploy:pages": "npx wrangler pages deploy ./dist --project-name blue-archive-quiz --branch production --commit-dirty=true"
+  }
+}
