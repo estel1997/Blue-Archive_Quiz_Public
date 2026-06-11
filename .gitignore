@@ -1,86 +1,10 @@
-# Secrets and local environment
-.env
-.env.*
-!.env.example
-supabase/service-role-key.txt
-
-# Dependencies and tool caches
 node_modules/
-.wrangler/
-.cache/
-tmp/
-
-# Generated build output
 dist/
 blue-archive-quiz-single.html
 
-# Local backups and fetched audit page caches
-backups/
-audit/story-pages/
-audit/story-pages-v2/
-audit/*.html
+.env
+.env.*
+*.local
 
-# Private quiz content, rights-managed assets, and fetched source caches
-assets/
-data/
-tmp/
-クイズ-ジャンル別/
-audit/
-docs/
-*.parse.json
-schaledb-*.json
-schaledb-*.html
-schaledb-*.js
-wikiru-halo.html
-weapon_icon_*.webp
-assets/x-title-call-card.png
-favicon*.png
-favicon.svg
-og-image.*
-
-# Private seed/content SQL. Keep schema and policy SQL public where useful.
-supabase/seed.sql
-supabase/combat-skills.sql
-supabase/memolobby-answer-assets.sql
-supabase/*story*.sql
-supabase/*memolobby*.sql
-supabase/update-sample-*.sql
-supabase/sample-*.sql
-supabase/exam-pass-score-90-yusha-alice.sql
-supabase/x_auto_posts.sql
-
-# Private X automation operations
-scripts/x-*.js
-scripts/x-*.ps1
-scripts/register-x-auto-slot-task.ps1
-scripts/unregister-x-auto-slot-task.ps1
-scripts/apply-exam-pass-score-90-yusha-alice.js
-scripts/audit-pickup-data.js
-scripts/build-combat-skills-sql.js
-scripts/build-performance-data.js
-scripts/build-quiz-data.js
-scripts/build-story-data.js
-scripts/build-supabase-seed-sql.js
-scripts/fix-story-trivia-split.js
-scripts/inspect-schaledb-bundle.js
-scripts/sync-game8-memolobby-answer-assets.js
-scripts/sync-memolobby-zoom-metadata.js
-scripts/update-memolobby-assets.py
-scripts/upload-combat-skills.js
-scripts/upload-memolobby-storage.js
-scripts/upload-supabase.js
-x-posting-schedule-*.txt
-handoff-summary.txt
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS / editor noise
-Thumbs.db
-Desktop.ini
 .DS_Store
-.vscode/
-.idea/
+npm-debug.log*
