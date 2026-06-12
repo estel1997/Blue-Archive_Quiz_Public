@@ -59,9 +59,7 @@ Browser
 
 ## Supabase / PostgreSQL
 
-`supabase/` に schema、ranking、submission、RLS、RPC などの SQL を置いています。公開 repo には service role key や private seed data を置かない方針です。
-
-詳しくは [docs/database-design.md](docs/database-design.md) を参照してください。
+`supabase/` に schema、ranking、submission、RLS、RPC などの SQL を置いています。
 
 ## Cloudflare Pages
 
@@ -71,18 +69,6 @@ npm run check
 npm run build
 npm run deploy:pages
 ```
-
-詳しくは [docs/deployment.md](docs/deployment.md) を参照してください。
-
-## セキュリティ上の注意
-
-- `.env` は commit しない
-- service role key は公開 repo に置かない
-- Supabase anon key を使う場合も RLS を前提にする
-- 権利物の画像・音声・ゲーム素材は repo に追加しない
-- 公開できない問題データや運用データは除外する
-
-詳しくは [docs/security-notes.md](docs/security-notes.md) を参照してください。
 
 ## 工夫した点
 
@@ -100,4 +86,4 @@ npm run deploy:pages
 
 ## 注意事項
 
-このリポジトリは学習・ポートフォリオ目的の非公式ファン制作物です。権利物や private data は公開対象外です。README / docs に API key、secret、token、service role key の実値は記載しません。
+このリポジトリは学習・ポートフォリオ目的の非公式ファン制作物です。権利物や private data は公開対象外です。
